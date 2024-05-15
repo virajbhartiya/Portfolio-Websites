@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SciOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Viraj Bhartiya" />
+
+  <!-- Facebook and Twitter integration -->
+  <meta property=" og:title" content="Alien | Viraj Bhartiya" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="https://virajbhartiya.github.io/projects/Alien" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="Alien | Viraj Bhartiya" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="https://virajbhartiya.github.io/projects/Alien" />
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="../images/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="../js/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="heyxviraj-page">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heyxviraj-navbar-brand">
+              <a class="heyxviraj-logo" href="https://virajbhartiya.github.io/"><span>@heyxviraj</span><span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div id="heyxviraj-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="blog-entry animate-box col-pb-sm">
+              <!-- <a href="blog.html" class="blog-img"><img src="../images/me.png" class="img-responsive" alt="Alien"></a> -->
+              <div class="desc">
+                <h2>Let's talk <a href="https://github.com/virajbhartiya/sciops" target="_blank">SciOps</a></h2>
+
+                <span><small>Feb 2024 </small> | <small> CLI Tool </small> | <small><a
+                      href="https://github.com/virajbhartiya/sciops" target="_blank">Fork on GitHub</a></small></span>
+                <div align="center">
+
+                  <pre>
+███████╗ ██████╗██╗    ██████╗ ██████╗ ███████╗
+██╔════╝██╔════╝██║   ██╔═══██╗██╔══██╗██╔════╝
+███████╗██║     ██║   ██║   ██║██████╔╝███████╗
+╚════██║██║     ██║   ██║   ██║██╔═══╝ ╚════██║
+███████║╚██████╗██║   ╚██████╔╝██║     ███████║
+╚══════╝ ╚═════╝╚═╝    ╚═════╝ ╚═╝     ╚══════╝
+                                            
+                                                                                                                                                   
+
+------------------------
+Command Line Scientific Calculator. Made with ❤️ using 🦀
+                        </pre>
+                </div>
+
+
+                <h2>Download</h2>
+
+                <a
+                  href="https://github.com/virajbhartiya/sciops/releases">https://github.com/virajbhartiya/sciops/releases</a>
+
+                <h2>Usage examples</h2>
+
+                <p>launch the interactive prompt by typing <code>sciops</code> to run multiple computations</p>
+
+                <pre><code>
+a = 10
+b = a + 1.14
+c = log(b, 3) + sin(PI)
+                  </code></pre>
+
+                <p>or run one off computations by simply providing them</p>
+
+                <pre><code>
+$ sciops 10 + 1.14
+$ sciops '10 + 1.14 * ln(50)'
+                  </code></pre>
+
+                <h2>Features</h2>
+
+                <pre><code>
+# basic arithmetic and assignment
+a = 1
+b = -2 % a * (3^2 / 4)
+b += 100
+
+# functions
+               
+exp(x)
+sqrt(x)
+cbrt(x)
+abs(x)
+floor(x)
+ceil(x)
+round(x)
+
+ln(x)
+log2(x)
+log10(x)
+log(x, b)
+
+sin(rad)
+cos(rad)
+tan(rad)
+
+sinh(rad)
+cosh(rad)
+tanh(rad)
+
+asin(rad)
+acos(rad)
+atan(rad)
+
+asinh(rad)
+acosh(rad)
+atanh(rad)
+                  </code></pre>
+
+                <p>All calculations are done using <a
+                    href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format">64 bit *binary* floating
+                    point arithmetic</a> (using the Rust type <a
+                    href="https://doc.rust-lang.org/std/primitive.f64.html"><code>f64</code></a>), so you can come
+                  across the limitations of this implementation, and observe behavior that may be different from other
+                  “scientific calculators”, such as the following:</p>
+                <ul>
+                  <li>Rounding errors that may be surprising in decimal notation (e.g. evaluating <code>0.1 + 0.2</code>
+                    prints <code>0.30000000000000004</code>).</li>
+                  <li>Special values such as “infinity”, “not a number” or a negative zero can be the result of
+                    calculations that overflow or have invalid arguments.</li>
+                </ul>
+
+                <h2>Contributing</h2>
+
+                <ol>
+                  <li>Fork it (<a
+                      href="https://github.com/virajbhartiya/sciops/fork">https://github.com/virajbhartiya/sciops/fork</a>)
+                  </li>
+                  <li>Create your feature branch (<code>git checkout -b feature/fooBar</code>)</li>
+                  <li>Commit your changes (<code>git commit -am 'Add some fooBar'</code>)</li>
+                  <li>Push to the branch (<code>git push origin feature/fooBar</code>)</li>
+                  <li>Create a new Pull Request</li>
+                </ol>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-pb-sm">
+              <div class="row">
+                <div class="col-md-10">
+                  <h2>Let's Talk</h2>
+                  <p class="heyxviraj-social-icons">
+                    Phone &mdash;<a href="tel:+918485837871"> +91 8485837871 </a><br>
+                    Email &mdash;<a href="mailto:vlbhartiya@gmail.com"> vlbhartiya@gmail.com</a>
+                  </p>
+                  <p class="heyxviraj-social-icons">
+                    <a target="_blank" href="https://www.instagram.com/heyxvraj"><i class="icon-instagram2"></i></a>
+                    <a target="_blank" href="https://www.twitter.com/heyxvraj"><i class="icon-twitter2"></i></a>
+                    <a target="_blank" href="https://in.linkedin.com/in/viraj-bhartiya-b002b5196"><i
+                        class="icon-linkedin3"></i></a>
+                    <a target="_blank" href="https://github.com/virajbhartiya"><i class="icon-github2"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>
+                  Made with <i class="icon-heart4" aria-hidden="true"></i> by <a
+                    href="https://github.com/virajbhartiya	" target="_blank">Viraj Bhartiya</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="../js/owl.carousel.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/magnific-popup-options.js"></script>
+
+  <!-- Main JS (Do not remove) -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>
